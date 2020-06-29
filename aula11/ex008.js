@@ -5,7 +5,7 @@ var velocPermitida = 50
 
 console.log('A velocidade do seu carro é de ' + velocidade + 'Km/h')
 
-if(velocidade => velocPermitida)
+if(velocidade => velocPermitida) //quando não tem senão, é condição simples
 {
     console.log('Você ultrapassou a velocidade permitida, MULTADO')
 }

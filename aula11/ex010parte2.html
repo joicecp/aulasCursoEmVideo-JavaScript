@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POLÍCIA FEDERAL</title>
+    <style>
+        body
+        {
+            font: normal 18pt Arial;
+           
+        }
+
+        input
+        {
+            font: normal 16pt Arial;
+            width: 90px;
+            text-align: center;
+            align-self: center;
+        }
+
+        div#res
+        {
+            margin: 18px;
+            text-align: center;
+        }
+
+        h1
+        {
+            text-align: center;
+        }
+         
+    </style>
+
+</head>
+<body>
+
+    <h1>| CONSULTA DE NACIONALIDADE |</h1>
+    <div id="res">INFORME SEU PAÍS</div>
+    Você está vivendo em qual país? <input type="text" name="txtNac" id="txtNac">
+    <input type="button" value="Verificar" onclick="verificar()">
+    
+    
+</body>
+
+<script>
+   
+    function verificar()
+    {
+        var nacionalidade = window.document.querySelector('input#txtNac')
+        var res = window.document.querySelector('div#res')
+        var pais = nacionalidade.value
+           
+        console.log(nacionalidade.value) //imprime o que foi digitado para verificação
+
+        res.innerHTML = 'Seu país é: <strong>' + pais.toUpperCase() + '</strong>'
+
+        if(pais !== 'brasil')
+        {
+        res.innerHTML += '<p>Você é <strong>ESTRANGEIRO</strong></p>'
+        }
+        else
+        {
+        res.innerHTML += '<p>Você é <strong>BRASILEIRO</strong>!!!</p>'
+        }
+
+    }
+
+    
+
+</script>
+</html>
