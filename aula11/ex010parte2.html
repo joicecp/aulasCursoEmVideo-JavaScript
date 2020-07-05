@@ -3,23 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Título que será exibido no navegador-->
     <title>POLÍCIA FEDERAL</title>
+
     <style>
+
         body
         {
             font: normal 18pt Arial;
-           
         }
 
-        input
+        #nacion 
         {
-            font: normal 16pt Arial;
-            width: 90px;
             text-align: center;
-            align-self: center;
+        }
+     
+        #botao 
+        {
+            text-align: center;
+        }
+
+        input[type=button]
+        {
+            margin: 18px;
+            font-size: large;
+            width: 140px;
+            background: aquamarine;  
+            border-radius: 20%;
+            padding: 8px 8px;
+        }
+
+        input[type=text]
+        {
+            text-align: center;
+            margin: 18px;
+            font-size: large;
+            width: 140px;
+            background: aquamarine;  
+            border-radius: 20%;
+            padding: 8px 8px;
         }
 
         div#res
+        {
+            margin: 18px;
+            text-align: center;
+        }
+
+        div#informe
         {
             margin: 18px;
             text-align: center;
@@ -33,13 +64,22 @@
     </style>
 
 </head>
+
 <body>
 
     <h1>| CONSULTA DE NACIONALIDADE |</h1>
     <div id="res">INFORME SEU PAÍS</div>
-    Você está vivendo em qual país? <input type="text" name="txtNac" id="txtNac">
-    <input type="button" value="Verificar" onclick="verificar()">
-    
+    <div id="informe">Você está vivendo em qual país?</div>
+
+    <!--Criado uma div separado para o input de texto, para melhor manipular no CSS-->
+    <div id="nacion">
+        <input type="text" name="txtNac" id="txtNac">
+    </div>
+
+    <!--Criado uma div separado para o input do botão, para melhor manipular no CSS-->
+    <div id="botao">
+        <input type="button" value="Verificar" onclick="verificar()">
+    </div>
     
 </body>
 
@@ -55,18 +95,23 @@
 
         res.innerHTML = 'Seu país é: <strong>' + pais.toUpperCase() + '</strong>'
 
-        if(pais !== 'brasil')
+        if(pais !== 'brasil' && pais !== "")
         {
-        res.innerHTML += '<p>Você é <strong>ESTRANGEIRO</strong></p>'
+            res.innerHTML += '<p>Você é <strong>ESTRANGEIRO</strong></p>'
         }
         else
         {
-        res.innerHTML += '<p>Você é <strong>BRASILEIRO</strong>!!!</p>'
+            if(pais == "")
+            {
+                res.innerHTML += '<p>Você tem que informar um <strong>PAÍS</strong>!!!</p>'
+            }
+            else
+            {        
+                res.innerHTML += '<p>Você é <strong>BRASILEIRO</strong>!!!</p>'    
+            }
         }
-
     }
 
-    
-
 </script>
+
 </html>
