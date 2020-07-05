@@ -1,3 +1,7 @@
+/*
+Author @joice
+*/
+
 var pais = 'EUA'
 
 console.log('Vivendo no ' + pais)
