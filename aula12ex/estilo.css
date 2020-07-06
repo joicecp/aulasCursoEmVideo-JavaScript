@@ -1,0 +1,42 @@
+body
+{
+    background: rgb(70, 142, 236);
+    font: normal 15px Arial;
+}
+
+header
+{
+    color: white;
+    text-align: center;
+}
+
+section
+{
+    background: white;
+
+    /*bordas arredondadas (radius.raio)*/
+    border-radius: 10px;
+
+    /*padding aumentou a caixa do texto*/
+    padding: 15px;
+
+    /*largura fixa*/
+    width: 500px;
+
+    /* centralizar na tela */
+    margin: auto;
+
+    /*centralizar texto*/
+    text-align: center;
+
+    /*deixar com sombra*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.450);
+}
+
+footer
+{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 2px 2px 8px rgba(255, 94, 0, 0.774);
+}
