@@ -21,31 +21,31 @@ console.log("Dia número: " + diaSem)
 switch (diaSem) 
 {
     case 0:
-        console.log("Hoje é Domingo")
+        console.log("Hoje é Domingo às ", agora.getHours(), ":", agora.getMinutes(), ":", agora.getSeconds())
         break
 
     case 1:
-        console.log("Hoje é Segunda")
+        console.log("Hoje é Segunda às " , agora.getHours() , ":" , agora.getMinutes() , ":" , agora.getSeconds())
         break
 
     case 2:
-        console.log("Hoje é Terça")
+        console.log("Hoje é Terça às " , agora.getHours() + ":" + agora.getMinutes() , ":" , agora.getSeconds())
         break
 
     case 3:
-        console.log("Hoje é Quarta")
+        console.log("Hoje é Quarta às " , agora.getHours() + ":" + agora.getMinutes() , ":" , agora.getSeconds())
         break
 
     case 4:
-        console.log("Hoje é Quinta")
+        console.log("Hoje é Quinta às " , agora.getHours() + ":" + agora.getMinutes() , ":" , agora.getSeconds())
         break
 
     case 5:
-        console.log("Hoje é Sexta")
+        console.log("Hoje é Sexta às " , agora.getHours() + ":" + agora.getMinutes() , ":" , agora.getSeconds())
         break
 
     case 6:
-        console.log("Hoje é sábado")
+        console.log("Hoje é sábado às " , agora.getHours() + ":" + agora.getMinutes() , ":" , agora.getSeconds())
         break
     default:
         console.log("[ERRO] Dia inválido")

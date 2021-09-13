@@ -1,3 +1,7 @@
+/*
+Author @joice
+*/
+
 var idade = 15
 
 if(idade < 16)

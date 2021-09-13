@@ -16,20 +16,22 @@ var yearOfEra = agora.getFullYear();
 console.log(`Agora são exatamente ${hora} horas, ${minute} minutos e ${second} segundos, no dia ${dayOfMonth} do mês ${monthOfYear} do ano de ${yearOfEra}.`);
 //console.log("Agora são exatamente " +  hora + " horas.");
 
-//condição aninhada, pode ter quantos else if quiser, valores dinâmicos e aplicável para todo tipo de situação
-if(hora >= 6 && hora <= 12)
+//condição múltipla, ideal para valores fixos (quando vai seguir somente um caminho e o valor é fixo)
+/*switch(expressao)
 {
-    console.log("Bom dia")
-}
-else if(hora > 12 && hora <= 18)
-{
-    console.log("Boa tarde")
-}
-else if(hora > 18 && hora < 23 && minute <= 59 && second <= 59)
-{
-    console.log("Boa noite")
-}
-else
-{
-    console.log("Boa madrugada")
-}
+    case valor 1:
+        execucao dos comandos
+        break;
+
+    case valor 2: 
+        execucao dos comandos
+        break;
+
+    case valor 3:
+        execucao dos comandos
+        break;
+
+    default(é como se fosse o else):
+        execucao dos comandos
+        break;
+}*/
