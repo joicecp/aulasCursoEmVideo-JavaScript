@@ -1,0 +1,1 @@
+//alert("Clique em ok para carregar a hora")
