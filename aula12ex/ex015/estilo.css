@@ -1,21 +1,24 @@
-body {
-    background: rgb(70, 142, 236);
+body
+{
+    background: rgb(0, 0, 0);
     font: normal 15px Arial;
 }
 
-header {
+header
+{
     color: white;
     text-align: center;
 }
 
-section {
+section
+{
     background: white;
 
-    /*bordas arredondadas (radius.raio)*/
+    /*bordas arredondadas/raio da borda (radius.raio)*/
     border-radius: 10px;
 
-    /*padding aumentou a caixa do texto*/
-    padding: 15px;
+    /*padding aumenta o tamanho da caixa de texto*/
+    padding: 50px;
 
     /*largura fixa*/
     width: 500px;
@@ -27,18 +30,15 @@ section {
     text-align: center;
 
     /*deixar com sombra*/
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.450);
+    box-shadow: 5px 5px 10px rgb(255, 255, 255);
 }
 
-div {
-    text-align: center;
-    /*padding aumenta o tamanho da caixa de texto*/
-    padding: 8px;
-}
-
-footer {
+footer
+{
     color: white;
     text-align: center;
+    
+    /*tipo da fonte*/
     font-style: italic;
     text-shadow: 2px 2px 8px rgba(255, 94, 0, 0.774);
 }
